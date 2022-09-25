@@ -5,7 +5,7 @@ const localDB = `mongodb+srv://${DBKEY}@cluster0.a0mzbzj.mongodb.net/test`
 
 const connectDB = async () => {
 
-    await Mongoose.connect(localDB, {
+     await Mongoose.connect(localDB, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }).then(res => {
